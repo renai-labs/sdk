@@ -1,3 +1,31 @@
+## v0.1.3 (2026-05-27)
+
+## Changes
+
+- feat(opencode): gate ren CLI to ren agent, document volume purposes
+- fix(model): scope agents to project dir, refresh base prompt
+- refactor(agent): make create + initial version atomic
+- feat(agent): create agent + initial version in one call
+- fix(skill): return 409 on duplicate version instead of leaking SQL
+- feat(cli): version flag, upgrade command, skill scope + publish
+- refactor(sandbox): drop explanatory comment on findSandboxSessionPod
+- refactor(token): extract randomToken, reuse for share tokens
+- refactor(replay): address review — dedupe token read, clearer names
+- refactor(replay): give sharing its own token, orthogonal to publishing
+- fix(api): no-op sandbox session update for sessions Ren never registered
+- fix(replay,auth): make share links resolve and correct invite URL path
+- fix(github): preserve repo snapshots, fail loud on missing account, refresh status on focus
+- test(mcp): update tool-name assertions to underscore-sanitized names
+- chore(skill): remove explanatory comment from validator
+- fix(skill): parse frontmatter with real YAML, stop rejecting valid skills
+- fix(mcp): sanitize tool names to match MCP name pattern
+- test(api): align identity + slug tests with current impl
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.3
+
+---
+
 ## v0.1.2 (2026-05-26)
 
 ## Changes
