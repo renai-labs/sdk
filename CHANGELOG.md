@@ -1,3 +1,20 @@
+## v0.1.4 (2026-05-31)
+
+## Changes
+
+- refactor(api): extract pickPublic helper for registry view projection
+- chore(sdk): regenerate after rebase onto dev
+- refactor(api): consolidate public registry endpoints behind PublicView
+- feat(api): expose session.create + session.url to MCP
+- fix(api): build session URL with base64url directory segment
+- feat(api/cli): expose session create + OpenCode URL to CLI
+- fix(api): refresh pod artifacts volume creds like file/memory stores
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.4
+
+---
+
 ## v0.1.3 (2026-05-27)
 
 ## Changes
