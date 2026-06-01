@@ -1,3 +1,18 @@
+## v0.1.7 (2026-06-01)
+
+## Changes
+
+- feat(opencode): per-agent MCP scoping, default to sonnet-4-6, gh+aws in sandbox
+- fix(app): default org logo to Ren mark
+- feat(app): show version details in agent membership dialog
+- chore: regenerate openapi, sdk and mcp tools
+- feat(api): editable project agent membership
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.7
+
+---
+
 ## v0.1.6 (2026-06-01)
 
 ## Changes
