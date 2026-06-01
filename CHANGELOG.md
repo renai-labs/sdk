@@ -1,3 +1,22 @@
+## v0.1.6 (2026-06-01)
+
+## Changes
+
+- rft(slack): prune via listChannels on reply failure
+- rft(api): use conditional spread for project list user scope
+- feat(slack): unified live channel-mapping API with auto-pruning
+- fix(api): scope project list to caller, gate podId filter by pod membership
+- rft(github): infer the org's single installation in routes
+- feat(slack): expose install/channel management via SDK + CLI
+- rft(slack): install flow should return json response
+- feat(github): expose GitHub OAuth + management via SDK, JSON-based start
+- fix(api): allow headless github oauth callback via state-bound vault
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.6
+
+---
+
 ## v0.1.5 (2026-06-01)
 
 ## Changes
