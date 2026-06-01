@@ -1,3 +1,43 @@
+## v0.1.5 (2026-06-01)
+
+## Changes
+
+- fix(sandbox): build opencode-plugin during image assembly instead of copying stale dist
+- feat(api): script to migrate pod-volume artifacts to slug-based keys
+- chore(sdk): regenerate for slug-based manifest and session fields
+- test(api): assert slug-based project paths and agent keys
+- feat(api): materialize sandbox entities by slug instead of ULID
+- refactor(slack): sender is email-match or channel fallback, else error
+- feat(slack): per-channel fallback sender + richer channel-mapping UI
+- refactor(api): drop dead exports surfaced by review
+- refactor(api): share safeJsonParse, name artifact marker, improve slack copy
+- refactor(opencode): centralize pod-volume IO and artifact read
+- refactor(slack): clean up bolt ingress, drop retry, relocate provider types
+- feat(slack): add channel-list endpoint for the install
+- refactor(slack): split Slack out of the webhook-trigger provider abstraction
+- feat(slack): drop thinking placeholder, post fresh reply on completion
+- chore(api): squash slack-revamp migrations into one
+- feat(slack): persist attachments to the pod volume and aggregate turn output
+- feat(slack): add channel-mapping admin API
+- feat(slack): route mentions via install channel mappings
+- chore(api): auto-restart Temporal worker on file change
+- fix(slack): request users:read.email scope for sender resolution
+- refactor(slack): provider-pattern reply lifecycle, JSON channel mappings
+- refactor(slack): simplify revamp — drop dead code, dedup reaction, fix query
+- feat(slack): inbound files, error surfacing, retry Block Kit
+- feat(slack): file reply pipeline — code blocks + showcase_artifact uploads
+- feat(slack): streaming typing indicator, artifact extraction
+- feat(slack): Bolt SDK migration, POST /api/slack/events, channel mapping dispatch
+- feat(slack): add slack_channel_mapping domain
+- feat(slack): add extractArtifacts, widen bot OAuth scopes
+- feat(litellm): upgrade Anthropic flagship to Opus 4.8
+- feat(sandbox): add Python 3 + uv to sandbox image
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.5
+
+---
+
 ## v0.1.4 (2026-05-31)
 
 ## Changes
