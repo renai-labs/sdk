@@ -1,3 +1,43 @@
+## v0.1.8 (2026-06-05)
+
+## Changes
+
+- refactor(slack): address PR review — trim agent tool surface, DRY types
+- feat(slack): bind agent-originated threads to sessions; move tools into plugin
+- feat(slack): agent-facing Slack tool surface via local MCP
+- refactor(google): address review — simplify provider, drop dead surface
+- feat(google): per-user Google Workspace OAuth provider (BYO app)
+- refactor(mcp): remove dead connectClient runtime dispatcher
+- fix(mcp): materialize basic-auth credentials into MCP_<slug>_BASIC
+- feat(mcp): apply api_key credentials via query param in connectClient
+- feat(vault): support basic auth credentials for MCPs end-to-end
+- fix(ci): unbreak main deploys after canvas + bot-id changes
+- chore(sdk): regenerate for topology endpoint
+- feat(api): add GET /api/topology aggregate (SDK-only)
+- chore(github): strip explanatory comments from shared-pod repo changes
+- fix(opencode-plugin): gate worktree create on materialization, not dir existence
+- feat(github): allow repo attachment on shared pods
+- refactor(enrichment): address PR review — extract date helpers to util, hoist REGIE_BASE
+- refactor(enrichment): improve WHOAMI.md rendering — month-precision timestamps, safe parsing, drop description line
+- refactor(test): rename msw-apollo → msw-regie, remove embedded worktree
+- refactor(enrichment): replace Apollo with Regie as sole provider, add REGIE_BEARER_TOKEN
+- feat(enrichment): add enrichment module with Regie provider, write WHOAMI.md on user provisioning
+- chore(slack): reword thinking status to "is working on it…"
+- chore: updated message on slackbot thinking
+- refactor(slack,opencode): address PR #276 review feedback
+- fix(slack): reply to subagent permissions/questions via the main turn session
+- test(slack): cover interactive handlers with a Slack client mock
+- refactor(slack): construct WebClient through a makeSlackClient seam
+- feat(slack): post pending interactive requests from the webhook poll loop
+- feat(slack): Block Kit interactivity for permission + question tools
+- feat(webhook-provider): add optional postInteractive reply-provider seam
+- feat(opencode): surface pending interactive requests + reply helpers
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.8
+
+---
+
 ## v0.1.7 (2026-06-01)
 
 ## Changes
