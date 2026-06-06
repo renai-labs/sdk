@@ -1,3 +1,18 @@
+## v0.1.9 (2026-06-06)
+
+## Changes
+
+- fix(api): exclude deprecated items from owned lists by default; add slug + deprecation tests
+- fix(api): pass slug on mcp and skill create to prevent duplicate entries
+- test(agent): assert version list/get serialize skills and mcps
+- fix(agent): surface configured skills and MCPs on version card
+- feat(api): upsert Zoho CRM Contact on signup
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.9
+
+---
+
 ## v0.1.8 (2026-06-05)
 
 ## Changes
