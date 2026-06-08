@@ -1,3 +1,43 @@
+## v0.1.10 (2026-06-08)
+
+## Changes
+
+- feat(session): make session-url API self-contained for sandbox auth
+- feat(email): expose emails CRUD to MCP
+- refactor(email): flat /api/emails CRUD, rename project-email → email
+- feat: default exclude deprecated resources at query schema level
+- refactor(topology-share): simplify get-or-create, remove race condition handling
+- chore(topology): remove yaml response support from GET /api/topology
+- feat(topology-share): idempotent create + unique index + smaller icon
+- fix: run prettier after generation to eliminate formatting churn
+- fix(scope): return 400 with descriptive reason for scope mismatches
+- fix(topology): include non-registry skills not attached to agents
+- fix(skill): remove yaml dependency from frontmatter parsing
+- feat(topology): first-class file/memory store collections
+- feat(canvas): render flat topology spec + desired-state draft schema
+- chore: update tags and integrations
+- feat(docs): integrations guide as MCP resource + ren docs integrations
+- refactor(canvas): adapt flat topology spec into blueprint on the client
+- refactor(topology): reshape GET /api/topology into a flat id+slug spec
+- feat(cli): ren docs — offline command tree + data-model guide
+- feat(triggers): render cron schedules as humane cadence + action
+- fix(canvas): vault↔pod edges, private entities, credential logos, pod order + interaction
+- fix(ci): add missing RESEND_INBOUND_WEBHOOK_SECRET and EMAIL_CHANNEL_DOMAIN to all generate-step env blocks
+- feat(email): thread agent-originated mail via Reply-To token + SES-root backfill
+- feat(email): gate email_send per-agent via plugin-backed MCP (Slack parity)
+- refactor(email): inline marked.parse, drop markdownToHtml wrapper
+- feat(email): proactive email_send parity with Slack (attachments + reply continuity)
+- feat(email): route agent by leading body slug instead of subject prefix
+- fix(email): preserve agent allow-exceptions in non-interactive ruleset
+- feat(email): non-interactive permissions for email-triggered turns
+- test(email): regression tests for References-JSON threading and slug routing
+- feat(email): markdown→HTML replies, subject agent routing, properties UI
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.10
+
+---
+
 ## v0.1.9 (2026-06-06)
 
 ## Changes
