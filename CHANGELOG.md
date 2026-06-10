@@ -1,3 +1,27 @@
+## v0.1.11 (2026-06-10)
+
+## Changes
+
+- fix(observability): keep PostHog error tracking alongside OpenTelemetry
+- feat(observability): enrich trace metadata for debuggability (REN-586)
+- feat(observability): OpenTelemetry tracing for platform + sandbox state machine (REN-586)
+- feat(pod-sandbox): await resume refresh via invalidate-complete signal
+- fix(slack): fully decouple the answer wake workflow from the request lifecycle
+- fix(pod-sandbox): give the resume ren:invalidate publish time to await the refresh
+- fix(slack): fire-and-forget the wake workflow so the handler never blocks
+- fix(webhook): address review — error code, single callback, direct-first delivery
+- fix(webhook): three races behind webhook + question failures
+- fix(opencode): deny facade MCP tools unless the agent binds them
+- refactor(topology): drop unused defaultAgent from email mailbox nodes
+- feat(canvas): show email mailboxes as nodes, sort pods by project count
+- fix(signup): unblock OAuth redirect; stop spurious billing ZodError
+- fix(pod-sandbox): bump bootstrap timeout 60s→120s
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.11
+
+---
+
 ## v0.1.10 (2026-06-08)
 
 ## Changes
