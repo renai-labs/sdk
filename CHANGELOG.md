@@ -1,3 +1,14 @@
+## v0.1.13 (2026-06-11)
+
+## Changes
+
+- feat(telegram): allow setting fallback sender at claim time
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.13
+
+---
+
 ## v0.1.12 (2026-06-11)
 
 ## Changes
