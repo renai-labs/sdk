@@ -1,3 +1,34 @@
+## v0.1.12 (2026-06-11)
+
+## Changes
+
+- chore(sdk): regenerate for telegram sandbox document route
+- refactor(telegram): drop explanatory comments
+- feat(telegram): gate group replies on addressing; fix question custom-answer flag
+- feat(telegram): expose telegram tools as a gated facade MCP
+- refactor(telegram): migrate client to grammy + harden reply/error paths
+- fix(telegram): honor a slash-command agent on a reply
+- fix(telegram): multi-question prompts support custom answers
+- fix(telegram): per-message session keying
+- fix(channels): restore granular Slack session-degraded error messages
+- refactor(telegram): address PR review round 2
+- refactor(telegram): address PR review — route guards + plugin client DRY
+- feat(telegram): settings UI, account link/unlink, revoke cleanup, command re-sync
+- refactor(telegram): drop the agent create_topic action
+- refactor(telegram): drop telegram_bot_message, reuse webhook_thread aliases
+- feat: add telegram integration tables in single migration
+- refactor: reset migrations to origin/dev baseline
+- refactor: consolidate migrations and remove unwanted docs/config
+- refactor(channels): share inbound run resolution + reply artifacts across slack/email/telegram
+- feat(telegram): reach parity with slack/email — interactive flag + shared sender attribution
+- feat(telegram): two-way Telegram integration via the webhook-provider pattern
+- fix(observability): cut trace noise from auth, health checks, and poll loops
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.12
+
+---
+
 ## v0.1.11 (2026-06-10)
 
 ## Changes
