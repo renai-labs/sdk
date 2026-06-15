@@ -1,3 +1,21 @@
+## v0.1.14 (2026-06-15)
+
+## Changes
+
+- fix(sandbox): re-apply idle timeout on resume
+- fix(sandbox): forward POSTHOG_API_KEY/HOST into sandbox bootstrap env
+- fix(sdk): throw real ApiError instead of plain object
+- fix(docker): copy experiments/video manifest for frozen install
+- fix(test): stub mailer in invitation suite to stop real Resend calls in CI
+- chore: prettier-format invitation.test.ts
+- fix(auth): unblock invitation accept and normalize pending-invite lookup (REN-613)
+- fix(opencode): advertise model attachment + image modalities to opencode (REN-624)
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.14
+
+---
+
 ## v0.1.13 (2026-06-11)
 
 ## Changes
