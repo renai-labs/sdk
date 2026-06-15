@@ -1,3 +1,20 @@
+## v0.1.15 (2026-06-15)
+
+## Changes
+
+- fix(sandbox): make attached-environment package installs work
+- feat(sandbox): offload Langfuse media server-side in the OTLP forwarder
+- feat(sandbox): bootstrap-once runtime setup + sandbox recreate kill switch
+- feat(sandbox): install attached environment packages on bootstrap
+- refactor(sandbox): drop LANGFUSE_ENVIRONMENT and explanatory comments
+- feat(sandbox): forward OTEL traces to Langfuse via server-side proxy
+- fix(slack): ingest snippets/links cleanly + add question dismiss
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.15
+
+---
+
 ## v0.1.14 (2026-06-15)
 
 ## Changes
