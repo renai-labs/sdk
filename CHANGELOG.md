@@ -1,3 +1,18 @@
+## v0.1.17 (2026-07-05)
+
+## Changes
+
+- fix(docker): copy tui-plugin manifest so frozen install matches lockfile
+- fix(docker): copy client-core manifest for frozen install
+- fix(tui): attach session command
+- refactor(api): drop the cli expose tag; client surface derives from sdk
+- refactor(api): unify replay + topology share tokens onto sharing module (REN-706)
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.17
+
+---
+
 ## v0.1.16 (2026-07-05)
 
 ## Changes
