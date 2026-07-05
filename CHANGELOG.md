@@ -1,3 +1,43 @@
+## v0.1.16 (2026-07-05)
+
+## Changes
+
+- feat(scripts): re-point channel-posting crons to the meta agent
+- refactor(manifest): stop force-injecting facade MCPs onto the meta agent
+- refactor(migration): unify channel-agent migrations, extract data cleanups to scripts
+- refactor(meta-agent): trim the originated-turn topology section
+- feat(meta-agent): guard topology changes on originated turns
+- refactor(subagent): address PR review
+- fix(subagent): persist and rehydrate subagent session messages
+- fix(triggers): blast-radius fixes for nullable trigger agent
+- refactor(triggers): give cron/webhook their own trigger_message envelope
+- feat(triggers): default cron/webhook to ren meta agent with handback
+- fix(prompts): explain channel handback in meta-agent routing
+- fix(slack): process file_share DMs so attachments reach the sandbox
+- refactor(prompts): handle missing-integration and tangential requests; drop config comment
+- fix(permissions): grant handoff explicitly to ren instead of relying on default
+- refactor(prompts): name the channel MCPs (Slack/email/Telegram) instead of "facade channels"
+- refactor(meta-agent): drop cross-agent MCP reach; gate handoff to Ren only
+- refactor(channel-prompts): unify per-turn injection into one <channel_message> tag
+- refactor(channel-prompts): gate channel-bound reply guidance on the reply_channel marker
+- refactor(prompts): reframe meta-agent situational prompt and enrich roster
+- feat: pin models for opencode default agents in pod sandboxes
+- refactor: inline facade-mcp load into manifest; facade.ts is just resolveChannelPromptSections (REN-711)
+- refactor: rename metaFor→getMetaAgentForProject, handBackToRen→handBackToMetaAgent; drop explanatory comments (REN-711)
+- refactor: simplify channel→meta routing per review (REN-711)
+- feat: route user channels to the project meta agent (REN-711)
+- docs(api): tell meta agent to use --output json and --fields for session traces (REN-662)
+- fix(api): correct ren CLI traces command form in meta-agent prompt (REN-662)
+- feat(api): session execution traces endpoint for meta agent self-observability (REN-662)
+- refactor(api): address REN-662 review — scoped meta-prompt, ids, version note
+- feat(api): per-project Ren meta agent — auto-attach, situational prompt, reach (REN-662)
+- refactor(slack): reply-channel wording + one-clarification/hyphen prompt rules (REN-707)
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.16
+
+---
+
 ## v0.1.15 (2026-06-15)
 
 ## Changes
