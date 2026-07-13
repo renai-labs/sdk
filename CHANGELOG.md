@@ -1,3 +1,43 @@
+## v0.1.18 (2026-07-13)
+
+## Changes
+
+- chore(api): squash 0018-0021 migrations into a single 0018
+- refactor(api): remove Composio MCP seeding (moved to registry)
+- feat(api): proxy Composio MCP traffic so the account key never enters the sandbox
+- refactor(api): drop code comments from Composio integration
+- feat(api): session-based Composio MCPs + Gmail/Google toolkits
+- feat(api): add Composio-backed Outlook MCP as a vault-native provider credential
+- feat(cron-trigger): support until boundaries
+- fix(topology): gate Canvas pods on membership (REN-717)
+- fix(migration): restore repo_mappings in 0019 snapshot
+- refactor(linear): rename MCP slug to linear-ren and resolve project via issue
+- refactor(linear): drop code comments per repo convention
+- chore(linear): regenerate SDK/ops + fix tests after rebase onto dev
+- docs(linear): document prod deployment + wire LINEAR_* prod secrets
+- feat(linear): connect + project mapping from the web UI
+- docs(linear): add SETUP.md for the Linear agent integration
+- fix(linear): request write scope so the agent can post activities
+- fix(linear): harden inbound dispatch, decouple oauth state secret
+- feat(linear): store refresh token and auto-refresh expired access tokens
+- feat(linear): add inbound Linear agent webhook channel (REN-511)
+- refactor(github): address PR review on the PR agent
+- refactor(github): split repo references from PR-agent channel mappings
+- feat(github): PR mention ack reactions + senior-engineer prompt
+- chore(github): drop local webhook test scripts from the PR
+- fix(sandbox): add host.docker.internal mapping for local Docker provider
+- feat(github): PR agent — @Ren mentions and opt-in auto-run
+- chore(api): trim comments from undelete-poisoned-sessions script (REN-730)
+- chore(api): add REN-730 undelete-poisoned-sessions remediation script
+- test(api): assert exact 400 body for facade MCP binding error (REN-727)
+- fix(api): return actionable message for facade MCP binding error (REN-727)
+- refactor(api): move timezone helpers into util/date
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.18
+
+---
+
 ## v0.1.17 (2026-07-05)
 
 ## Changes
