@@ -1,3 +1,23 @@
+## v0.1.19 (2026-07-15)
+
+## Changes
+
+- refactor(api): reset agent copy to 0.0.1 + carry skill metadata on copy
+- refactor(api): simplify copy-to-org via toOrg + single transaction (REN-722)
+- feat(api): replace promote-to-org with copy-to-org clone (REN-722)
+- tdlr REN-722 done - added promote endpoint to move a private skill/agent/mcp to org scope
+- fix(mcp): skip URL dedupe for gateway (mcp_provider) and plugin-backed MCPs
+- refactor(mcp): simplify findDuplicateUrl to sequential precedence lookups
+- fix(mcp): dedupe MCPs by URL within an org's accessible scope (REN-773)
+- fix(linear): attribute agent session to comment author (REN-798)
+- docs(api): update module CLAUDE.md for 13/14 Jul releases
+- fix(vault): proactive MCP OAuth refresh sweeper + archive-on-fatal (REN-788)
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.19
+
+---
+
 ## v0.1.18 (2026-07-13)
 
 ## Changes
