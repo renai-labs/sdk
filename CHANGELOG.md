@@ -1,3 +1,43 @@
+## v0.1.20 (2026-08-06)
+
+## Changes
+
+- refactor(api): split 0037 into pure-DDL migration + one-time scripts
+- chore(api): renumber migration to 0037 + regenerate after main rebase
+- chore(gen): regenerate for search summary rewording
+- fix(api,cli): audit follow-ups — pod-member 400 mapping, migration owner backfill, explicit false predicate, transactional archive sweep, stale copy
+- fix(api): topology share stays org-scoped at create (pre-union behavior)
+- chore(api): renumber migration to 0035 + migrate new project binding routes to role guards
+- fix(api): publish completes the ratchet in place + pin cross-org published mutation denials
+- feat(clients): visibility filters replace ?scope=user across app, CLI, client-core, tui-plugin
+- fix(api): gate mutations with owned guards + guard skill copy source (canOwn-on-mutation)
+- chore(api): strip review-pass code comments + tighten user-lifecycle/pat types
+- chore(api): collapse authz-pass migrations into one self-contained 0033
+- feat(api): remove ?scope=user OpenAPI param + B25 surface assertions (A1, stage 11)
+- feat(api): archive-before-delete + UnauthorizedError + auth monitoring (A15,E1-E6,E8,B22,B23,B26, stage 10)
+- feat(api): pod visibility ceiling + sole-member invariant + defaults-follow-ceiling (A9,A10,A13,A16,B19, stage 9)
+- fix(api): org-wide memory-store mountSlug uniqueness + dedupe migration (A11,A12,B20, stage 8)
+- feat(api): in-place cascading promote replaces copyToOrg + ratchet pins (A6,A7,B16,B17,B8, stage 7)
+- feat(api): guard split into visible/owned/load factories + rename cleanup (A8,D2,D3,D4,D5,N3,N4,N5,B18, stage 6)
+- feat(api): union visibility + delete OwnerContext + visibility field (A1,N2,N6,B15,B6,B21, stage 5)
+- test(api): retitle sandbox act-as test to role vocabulary (B4)
+- feat(api): replace 40-scope catalog with rank-ordered Role + requireMinRole (A2-A5,C1-C3,D1,D6,N1,N7, stages 3-4)
+- feat(api): add Role union + RenClaims Zod schema (D1, D2, B24, stage 2)
+- test(api): pin resolver precedence + PAT authz matrix (B14, stage 1)
+- feat(api): expose LiteLLM model IDs
+- fix(api): address PR review comments on scoped instructions
+- docs(api): blueprint docs for spec additions
+- chore: regenerate sdk + openapi
+- chore(api): blueprint spec test coverage
+- feat(api): authored instructions/initialPrompt on blueprint create/update
+- feat(api): blueprint install applies instructions, references, and project attachments
+- feat(api): blueprint build captures project instructions, references, and attachments
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.20
+
+---
+
 ## v0.1.19 (2026-07-15)
 
 ## Changes
