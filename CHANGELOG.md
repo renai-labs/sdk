@@ -1,3 +1,43 @@
+## v0.1.21 (2026-08-07)
+
+## Changes
+
+- fix(deploy): copy skill-md node_modules into the api runtime image
+- fix(deploy): add @ren/skill-md workspace to api and site Dockerfiles
+- docs: catch token-auth, auth-and-state, manifest-and-hot-reload up to skill-read serving (review)
+- feat: opencode-exact SKILL.md parsing + skill-folder permissions that mirror load access
+- refactor(api): fold the skill storage backfill into its migration script
+- fix: align sandbox permission composition with skill serving
+- fix: E2E-found fixes — opencode menu contract, skill-read rotation, CLI positionals/arrays, resource-check removal
+- fix: strict review pass — token kind-scoped revoke, mirror completeness marker, discriminated version.data, tag parity, monitoring captures
+- fix: review hardening pass + comment sweep
+- feat(api): drop the legacy manifest skills field, serve skills only via the menu
+- chore(gen): regenerate for project.skill.resolution + pod.resourceCheck (PR final)
+- feat: one shared SKILL.md validator (@ren/skill-md) imported by API and CLI (PR 4)
+- feat(api): /resource-check reads the sandbox status file (decision 9, PR 3)
+- feat(opencode-plugin): consume skillMenuPath via opencode skills.urls, delete downloader (decision 6/9, Materialise #6)
+- docs(api): document publish-no-fanout + deprecation-not-materialisation, rewrite skill AGENTS.md (Publish #3)
+- feat(api): surface pin conflicts on project read + reach pin-archived + drop captures (decision 5, Edge F, Materialise #7)
+- feat(api): publish of a git skill requires a publicly cloneable repo (decision 11, Publish #2)
+- chore(gen): regenerate SDK/MCP/CLI + adapt first-party consumers (chunk 13)
+- feat(api): manifest carries both legacy skills and new skillMenuPath (chunk 13)
+- feat(api): skill monitoring sweep — mutation + fan-out failure captures (chunk 12)
+- feat(api): harden skill-read serving auth — both-direction rejection, redaction, rate limit (chunk 9)
+- feat(api): per-project skill serving — menu routes, 302 delivery, skill-read token (chunk 8/9)
+- feat(api): per-file S3 skill storage, merged reads, one-shape data (chunk 7+10)
+- feat(api): validate git skills at create, git skills are versionless (decision 1/2/3)
+- feat(api): git skill mirror module + local git fixtures (decision 2/10, edge C/K)
+- feat(api): JSON+base64 skill upload body, SKILL.md-authoritative overrides
+- fix(api): archive skill + versions in one transaction, report blast radius
+- refactor(api): one shared copy/fork column-mapper + broken-pin errors
+- fix(api): atomic version archive, strict publish 409, race-safe conflicts
+- refactor(api): rename SkillValidationError, drop unused contentHash, fix as-laundering
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.21
+
+---
+
 ## v0.1.20 (2026-08-06)
 
 ## Changes
