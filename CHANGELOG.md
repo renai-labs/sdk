@@ -1,3 +1,43 @@
+## v0.1.22 (2026-08-11)
+
+## Changes
+
+- fix(api): correct the vault-attachment prose in the meta prompt and data model
+- fix(api): only treat pod_id as a scope marker on pod-scoped tables
+- refactor(api): rebuild the vault-tier migration on top of vault.pod_id
+- fix(api): tighten vault provisioning, pod-vault oauth callbacks and fan-out
+- fix(api): keep a vault in exactly one container tier
+- style(api,app): drop the comments added by the vault-tiers change
+- refactor(api): squash the vault-tier migrations into one
+- feat(api,app): three-tier vaults replacing pod-vault attachment
+- feat(api): add vault.pod_id ahead of the three-tier vault change
+- test(api): assert the surviving store keeps its bytes, not its object count
+- feat(api): put reference doctrine in the descriptions, seed store AGENTS.md
+- fix(api): give every git reference a kind-bearing description
+- refactor(api,plugin): drop the explanatory comments
+- feat(api,plugin): consolidate agent context surfaces
+- test(api): reset the skill caches after their suites, not just before each test
+- refactor(api): trace the git mirror paths instead of counting them in-process
+- docs(api): place the memory gauge in the documented middleware order
+- feat(api): emit a process memory gauge with cache and mirror counters
+- feat(api): trace the skill menu cache and git mirror path
+- fix(api): sweep expired cache entries on read so they stop accumulating
+- docs(api,plugin): the artifact template is not in the image (PR review)
+- fix(api,cli,plugin): artifact defects found by the e2e pass
+- fix(artifact): harden artifact workflows
+- feat(api): auto-inject the ren-artifact skill into every project
+- fix(cli): report the sandbox requirement before the template flag
+- refactor(api,cli): move the artifact starter into the ren-artifact skill
+- feat(api): give the artifact template shadcn/ui, Recharts and one theme file
+- docs(api): document the artifact and pod-database entities
+- feat(api): grant the artifacts tree to every agent in the pod
+- feat(api): bake the artifact project template into the sandbox image
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.22
+
+---
+
 ## v0.1.21 (2026-08-07)
 
 ## Changes
