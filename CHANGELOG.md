@@ -1,3 +1,21 @@
+## v0.1.23 (2026-08-12)
+
+## Changes
+
+- fix(registry,api): point the meta agent at the real credentials page
+- fix(registry,api): correct meta-skill facts and cut prose padding
+- feat(registry,api): one skill for the meta agent
+- chore(api): renumber the skill agent_name migration to 0051 after rebase onto main
+- refactor(api): name the per-project menu builder for what it returns
+- fix(api): stop the skill menu rebuild re-reading SKILL.md from S3
+- fix(api): scope session reads to the caller's pod membership
+- feat(app,api,ui): revamp the web workspace and three-tier vault model
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.23
+
+---
+
 ## v0.1.22 (2026-08-11)
 
 ## Changes
