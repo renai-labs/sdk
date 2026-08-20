@@ -1,3 +1,43 @@
+## v0.1.24 (2026-08-20)
+
+## Changes
+
+- fix(registry): address assets on the live cdn host
+- fix(vault): key a requirement by whatever satisfies it
+- chore(sdk): regenerate for the setup guide on auth requirements
+- feat(vault): carry an app's setup guide onto its credential requirements
+- chore(sdk): regenerate for the blueprint brand colour
+- chore(api): squash this branch's migrations into one
+- feat(blueprint): store the vendor's brand colour
+- feat(blueprint): carry example prompts through to the composer
+- feat(api): carry a setup guide on mcp and skill, and a type on blueprint
+- feat: point shipped artifacts at useren.ai
+- feat(api): let a git skill's source pointer be updated
+- refactor(registry): move the meta agent and its skills into ren-meta/
+- fix(api): fold a ref-only agent's live skills into its project on migrate
+- fix(api): validate a blueprint's gitRepos against the installing org
+- feat(registry): make the folder tree the only catalog
+- feat(api): converge blueprints on spec v3 and compile them from registry folders
+- feat(api): add a per-cron-trigger model override
+- docs(api): correct the timeout-tuning note after the PodSandbox reuse
+- refactor(api): reuse the PodSandbox lookups in sandbox timeout tuning
+- chore(api): drop the explanatory comments from the resume timeout fix
+- fix(api): stop sandbox resume from clobbering a busy timeout window
+- revert(api): drop the special case for our own organisation
+- feat(api): close the invite with a thanks
+- fix(api): tighten the invite copy
+- feat(api): send member invites as plain text
+- feat(api): never email replies to automated senders
+- feat(api): send member invites from a dedicated mail subdomain
+- fix(api): replay the OAuth resource indicator instead of deriving it
+- refactor(billing): let the plan picker state the amounts plainly
+- perf(billing): stop caching the plan catalogue
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.24
+
+---
+
 ## v0.1.23 (2026-08-12)
 
 ## Changes
