@@ -1,3 +1,43 @@
+## v0.1.25 (2026-08-27)
+
+## Changes
+
+- fix(inference): surface the failures these paths were swallowing
+- fix(inference): bill Ren-pool usage at catalog rates
+- chore(api): squash branch migrations into one
+- fix(inference): harden subscription routing contracts
+- chore(api): renumber the subscription migration onto main
+- fix(billing): gate budgets on billable paths only, not customer subscriptions
+- fix(inference): scope key models to the org, unify variant defaults, share crypto helpers
+- chore: strip code comments from the subscription routing changes
+- fix(bridge): name routing surfaces after the wire, not the vendor
+- fix(inference): bill subscription usage from the API, not response headers
+- feat(inference): provider-neutral subscription routing
+- chore(api): squash branch migrations into one
+- refactor(claude): reuse shared helpers in the subscription module
+- feat(model): ModelSelection object, fold internal/claude-* aliases
+- feat(model): default every variant to medium
+- refactor(claude): simplify subscription pool code after review
+- refactor(claude): simplify subscription pool routing
+- chore(api): squash branch migrations into one
+- feat(models): add dynamic Claude variants
+- feat(opencode): use internal subscription pools locally
+- feat(claude): add organization subscription pools
+- feat(app,ui): refine the guided onboarding and session chat
+- feat(blueprint): expose the icon in the browse listing
+- perf(api): warm the pod sandbox before anyone reaches the composer
+- feat(blueprint): carry the authored icon onto the row
+- fix(outreach): repair the welcome message and drop a dead helper
+- feat(outreach): Slack Connect channel per paying customer
+- fix(api): grant skill folder access under both cache spellings
+- fix(api,app,cli): gate credits before the sandbox and block broke teams
+- refactor(api): make budget sync the single owner of cron billing pause
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.25
+
+---
+
 ## v0.1.24 (2026-08-20)
 
 ## Changes
