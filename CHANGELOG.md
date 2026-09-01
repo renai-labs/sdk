@@ -1,3 +1,43 @@
+## v0.1.26 (2026-09-01)
+
+## Changes
+
+- test: pin the service tier to whoever actually asked for one
+- fix(api): stop the refresh sweep from killing seats it cannot rotate
+- test(api,bridge): cover reconnect scheduling and the Hermes affinity header
+- feat(api,litellm): publish the Codex Spark model
+- fix(api): stop requesting a service tier the seat never asked for
+- fix(api): keep Codex seats readable, refreshable, and bounded
+- chore: drop code comments from the Codex provider
+- fix(api): read every limit a Codex response reports, and no phantom ones
+- fix(api,bridge): address review — restore Anthropic refresh timing, honour the refresh floor
+- feat(cli,api): contribute a Codex seat to the global pool, and prove Anthropic is untouched
+- feat(api,bridge): finish the Codex lifecycle — cancellation, scheduling, refresh timing
+- feat(api,bridge): stop one dropped connection from punishing a whole seat
+- feat(api): let an idle exhausted Codex seat find out for itself that it reset
+- feat(api): read a Codex seat's quota from the account's own usage endpoint
+- feat(api,bridge): bill the tier Ren asked for, not the one Codex claims
+- feat(api,bridge): keep a Codex turn state with the seat that minted it
+- fix(api,bridge): pause the model a Codex seat cannot serve, not the seat
+- feat(api,bridge): carry the catalog's base instructions and service tier to the request
+- fix(api): identify Codex quota windows by duration, and re-read a stale catalog
+- fix(api): make Codex device polling and capability reads safe to run concurrently
+- feat(api): add Codex access-token onboarding, global contribution and the harness catalog
+- fix(api,bridge): send the FedRAMP state a Codex seat already carries
+- feat(litellm,api): publish all six Codex models subscription-first
+- fix(api,bridge): schedule Codex refresh on the token, and read the 429 body
+- fix(bridge,api): repair the Codex first-output gate and stream parser
+- fix(api): correct Codex error mapping, refresh health and dead code
+- fix(api): use a portable fetch parameter type in the catalog test
+- test(api): cover Codex capability discovery and seat eligibility
+- feat(litellm): route Codex subscription models through the bridge
+- feat(api): expose Codex device-code onboarding
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.26
+
+---
+
 ## v0.1.25 (2026-08-27)
 
 ## Changes
