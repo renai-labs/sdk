@@ -1,3 +1,30 @@
+## v0.1.27 (2026-09-03)
+
+## Changes
+
+- fix(api): lift a connected seat's Codex prompts, not just a refreshed one's
+- refactor: drop the Codex integration's code comments
+- refactor(api,litellm): store Codex prompts once instead of once per seat
+- feat(api,litellm): serve Codex its own model catalogue and a stable install identity
+- chore: regenerate MCP registry and client-core ops
+- feat(onboarding): personalize starter prompts
+- fix(bridge): replace Claude Fable 5
+- fix(api): poll a provider seat even while its traffic keeps it busy
+- fix(api): read provider quota windows by what they measure
+- feat(tasks): add native Ren labels
+- fix(api): unbreak the image build and stop shipping the whole workspace
+- fix(inference): stop an unpublished effort from spilling Codex turns to the paid API
+- fix(api): record client.used at device approval, derive from oauth tokens
+- fix(api): update import script placeholder domain to api.useren.ai
+- chore(api): note duplicate client.used activation path (review TODO)
+- feat(api): serve claude-code import script with device auth
+- feat(gateway): pooled Claude/Codex inference, app UI, and marketing site
+
+
+Published to npm: https://www.npmjs.com/package/@renai-labs/sdk/v/0.1.27
+
+---
+
 ## v0.1.26 (2026-09-01)
 
 ## Changes
